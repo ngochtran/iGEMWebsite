@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 import Dropdown from './Dropdown'
 import {menuItems} from "../menuItems"
-// import MenuItems from "./MenuItems"
+import MenuItems from "./MenuItems"
 
 function Navbar() {
     const [click, setClick] = useState(false);
