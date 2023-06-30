@@ -1,75 +1,65 @@
-export const MenuItems = [
-    {
-        title: "Home",
-    },{
-        title: "Project",
-        submenu: [
-            {
-                title: "Description"
-            },
-            {
-                title: "Design"
-            },
-            {
-                title: "Engineering"
-            },
-            {
-                title: "Experiments"
-            },
-            {
-                title: "Safety"
-            },
-            {
-                title: "Implementation"
-            },
-            {
-                title: "Results"
-            },
-            {
-                title: "Notebook"
+import { useState, useEffect, useRef } from "react";
+import Dropdown from "./Dropdown";
+import { Link } from 'react-router-dom';
+
+const MenuItems = ({items, depthLevel}) =>{
+    const [dropdown, setDropdown] = useState(false);
+
+    let ref = useRef();
+
+    useEffect(()=>{
+        const handler = (event) => {
+            if (dropdown && ref.current && !ref.current.contains(event.target)){
+                setDropdown(false);
             }
-        ]
-    },{
-        title: "Parts",
-        submenu: [
-            {
-                title: "Part Collection"
-            },
-            {
-                title: "Parts"
-            }
-        ]
-    },{
-        title: "Human Practices",
-        submenu: [
-            {
-                title: "Integrated Human Practices"
-            },
-            {
-                title: "Communication"
-            },
-            {
-                title: "Sustainable Development"
-            },
-            {
-                title: "Education"
-            }
-        ]
-    },{
-        title: "Team",
-        submenu: [
-            {
-                title: "Our Team"
-            },
-            {
-                title: "Attributions"
-            },
-            {
-                title: "Our Contribution"
-            }
-        ]
-    },{
-        title: "Awards",
-    }
+        };
+        document.addEventListener("mousedown", handler);
+        document.addEventListener("touchstart", handler);
+        return() => {
+            document.removeEventListener("mousedown", handler);
+            document.removeEventListener("touchstart", handler);
+        };
+    }, [dropdown]);
     
-]
+    const onMouseEnter = () => {
+        window.innerWidth > 960 && setDropdown(true);
+    };
+    const onMouseLeave = () => {
+        window.innerWidth > 960 && setDropdown(false);
+    };
+
+    return (
+        <li className={`menu-items ${dropdown ? "dropdown" : ""}`}
+          ref={ref}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+        {
+            items.submenu ? ( <>
+                <button type = "button" aria-haspopup = "menu" aria-expanded = { dropdown ? "true" : "false" }
+                    onClick = {
+                        () => setDropdown((prev) => !prev)
+                    } >
+                {
+                    items.title
+                } {
+                    " "
+                } {
+                    depthLevel > 0 ? < span > & raquo; </span> : <span className="arrow" />
+                } </button> <Dropdown depthLevel = {
+                    depthLevel
+                }
+                submenus = {
+                    items.submenu
+                }
+                dropdown = {
+                    dropdown
+                }
+                /> </>
+            ) : ( <Link to="/#">{items.title}</Link>
+            )
+        } </li>
+    );
+};
+
+export default MenuItems;
