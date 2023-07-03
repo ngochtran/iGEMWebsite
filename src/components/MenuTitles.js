@@ -14,29 +14,26 @@ export const MenuTitles = [
                 title: "Engineering"
             },
             {
-                title: "Experiments"
-            },
-            {
-                title: "Safety"
-            },
-            {
                 title: "Implementation"
             },
             {
                 title: "Results"
-            },
-            {
-                title: "Notebook"
             }
         ]
     },{
-        title: "Parts",
+        title: "Wet Lab",
         submenu: [
             {
                 title: "Part Collection"
             },
             {
                 title: "Parts"
+            },
+            {
+                title: "Experiments"
+            },
+            {
+                title: "Safety"
             }
         ]
     },{

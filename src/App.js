@@ -1,19 +1,22 @@
-import { BrowserRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Description from './components/pages/Description';
+import Home from './components/pages/Home';
 import Navbar from './components/Navbar';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
-      <header className="App-header">
-        <div className="nav-area">
-          <Link to="/" className="logo">Stanford</Link>
-          <Navbar />
-        </div>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/description" element={<Description />} />
+      </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
