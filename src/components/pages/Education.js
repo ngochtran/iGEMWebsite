@@ -1,12 +1,12 @@
 import React from 'react'
 import Template from '../Template'
 
-const Engineering = () => {
+const Education = () => {
     return ( 
         <div> 
-            <Template />
+            <Template title="Education" />
         </div>
     )
 }
 
-export default Engineering
+export default Education

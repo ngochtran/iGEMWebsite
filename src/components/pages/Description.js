@@ -1,11 +1,10 @@
 import React from 'react'
+import Template from '../Template'
 
 const Description = () => {
     return ( 
         <div> 
-            <h1>
-                Hi There
-            </h1>
+            <Template title="Description" />
         </div>
     )
 }

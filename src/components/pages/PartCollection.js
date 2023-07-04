@@ -1,11 +1,12 @@
 import React from 'react'
+import Template from '../Template'
 
-const PartsCollection = () => {
+const PartCollection = () => {
     return ( 
         <div> 
-
+            <Template />
         </div>
     )
 }
 
-export default PartsCollection
+export default PartCollection

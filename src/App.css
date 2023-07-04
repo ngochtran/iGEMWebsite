@@ -10,19 +10,22 @@ body {
 }
 
 /* ------------ NAVBAR -------------*/ 
-header {
-  background-color: rgba(255, 0, 0, 0.5); /* Set the background color to a transparent red */
-  height: 80px;
+header .nav-area {
+  background-image: linear-gradient(to right, #9796f0d0, #fbc7d4a2);/* Set the background color to a transparent red */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07),
     0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: #212529;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
   background-color: transparent; /* Set the background color of the navbar to transparent */
-  z-index: 1;
+  z-index: 9999;
   position: fixed;
+  width: 100%;
 }
 
 .navbar-link {
@@ -38,6 +41,7 @@ header {
   height: 80px;
   overflow: visible; /* Remove the horizontal scrolling */
   white-space: nowrap;
+  z-index: 9999;
 }
 
 .logo {
@@ -58,7 +62,7 @@ header {
   list-style-type: none;
   height: 100%;
   margin-bottom: 0;
-
+  z-index: 9999;
 }
 
 .navbar-item {
@@ -190,14 +194,15 @@ header {
 
 .Footer h5 {
   color: #f60838;
+  color: white;
 }
 
 .footer-top {
-  background-color: rgb(231, 229, 219);
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
 }
 
 .footer-bottom {
-  background-color: rgba(255, 0, 0, 0.5);;
+  background-color: rgb(45, 43, 61);
   margin: 0;
   padding: 50px;
   align-self: center;
@@ -205,6 +210,7 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 
 .footer-bottom ul {
@@ -219,7 +225,7 @@ header {
 .footer-bottom li a {
   font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .custom-shape-divider-top-1688350882 {
@@ -249,4 +255,31 @@ header {
 
 .end-note p{
   font-size: 12px;
+}
+
+/* ------------ TITLE TEMPLATE  -------------*/
+.title {
+  height: 30rem;
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+.custom-shape-divider-bottom-1688456140 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1688456140 svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 147px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1688456140 .shape-fill {
+  fill: rgb(255, 255, 255);
 }

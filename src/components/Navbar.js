@@ -14,35 +14,45 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <ul className="navbar-menu">
-        {MenuTitles.map((menu, index) => (
-          <li
-            key={menu.title}
-            className={`navbar-item ${menu.submenu ? 'has-dropdown' : ''}`}
-            onMouseEnter={() => handleMenuEnter(index)}
-            onMouseLeave={handleMenuLeave}
-          >
-            {menu.submenu ? (
-              <>
-                <span className="navbar-title">{menu.title}</span>
-                <ul className={`navbar-dropdown ${activeMenu === index ? 'show' : ''}`}>
-                  {menu.submenu.map((subMenu) => (
-                    <li key={subMenu.title} className="navbar-dropdown-item">
-                      <Link to={`/${subMenu.title}`}>{subMenu.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : (
-              <Link to={`/${menu.title}`} className="navbar-title">
-                {menu.title}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <header className="App-header">
+      <div className='row nav-area'>
+        <div className='col'>
+          <Link to="/" className="logo">Stanford</Link>
+        </div>
+        <div className='col'>
+        </div>
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          {MenuTitles.map((menu, index) => (
+            <li
+              key={menu.title}
+              className={`navbar-item ${menu.submenu ? 'has-dropdown' : ''}`}
+              onMouseEnter={() => handleMenuEnter(index)}
+              onMouseLeave={handleMenuLeave}
+            >
+              {menu.submenu ? (
+                <>
+                  <span className="navbar-title">{menu.title}</span>
+                  <ul className={`navbar-dropdown ${activeMenu === index ? 'show' : ''}`}>
+                    {menu.submenu.map((subMenu) => (
+                      <li key={subMenu.title} className="navbar-dropdown-item">
+                        <Link to={`/${subMenu.title}`}>{subMenu.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <Link to={`/${menu.title}`} className="navbar-title">
+                  {menu.title}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+      </div>
+    </header>
+    
   );
 };
 
