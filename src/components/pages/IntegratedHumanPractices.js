@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const HumanPractices = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Integrated Human Practices">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

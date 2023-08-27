@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const Engineering = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Engineering">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

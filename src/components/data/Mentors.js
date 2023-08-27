@@ -1,0 +1,78 @@
+export const mentorInfo = [
+    {
+      id: 0,
+      name: "Dr. Drew Endy",
+      role: "Principle Investigator",
+      img: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+        alt: "Photo of Dr. Drew Endy",
+      },
+      website: "", 
+      email: "", 
+      linkedin: "",
+      twitter: "", 
+      google: "", 
+      bio: "",
+    },
+    {
+      id: 1,
+      name: "Dr. Huijun Ring",
+      role: "Mentor",
+      img: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drring.png",
+        alt: "Photo of Dr. Huijun Ring",
+      },
+      website: "", 
+      email: "", 
+      linkedin: "",
+      twitter: "", 
+      google: "", 
+      bio: "",
+    },
+    {
+      id: 2,
+      name: "Dr. Phil Kyriakakis",
+      role: "Mentor",
+      img: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drkyriakakis.png",
+        alt: "Photo of Dr. Phil Kyriakakis",
+      },
+      website: "", 
+      email: "", 
+      linkedin: "",
+      twitter: "", 
+      google: "", 
+      bio: "",
+    },
+    {
+      id: 3,
+      name: "Dr. Nils Averesch",
+      role: "Mentor",
+      img: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/draveresch.png",
+        alt: "Photo of Dr. Nils Averesch",
+      },
+      website: "", 
+      email: "", 
+      linkedin: "",
+      twitter: "", 
+      google: "", 
+      bio: "",
+    },
+    {
+      id: 4,
+      name: "Cyrus K.",
+      role: "Mentor",
+      img: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/cyrus.png",
+        alt: "Photo of Cyrus K.",
+      },
+      website: "", 
+      email: "", 
+      linkedin: "",
+      twitter: "", 
+      google: "", 
+      bio: "",
+    }
+  ];
+  

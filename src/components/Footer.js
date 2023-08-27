@@ -1,8 +1,15 @@
 import React from "react";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTwitter, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faEnvelope, faTwitter, faInstagram, faTiktok);
+
 
 const Footer = () => {
     return (
-        <>
+        <footer>
             <div className="Footer">
                 <div className="footer-container footer-top">
                     <div className="row">
@@ -13,17 +20,22 @@ const Footer = () => {
                                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                             </svg>
                         </div>
-                        <div className="col-sm ft-1">
-                            <h3>Stanford iGEM</h3>
-                            <div className="footer-icons">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
+                        <div className="col-sm-3 ft-1">
+                            <img id="stanford-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/stanfordlogo-1.png" alt="Stanford iGEM Team Logo" /> 
+                            <div className="icons">
+                                <a href="mailto:stanfordigemteam@gmail.com"><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
+                                <a href="https://twitter.com/igemStanford23"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+                                <a href="https://www.instagram.com/stanford_igem/?hl=en"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+                                <a href="example.com"><FontAwesomeIcon icon={['fab', 'tiktok']} /></a>
                             </div>
                         </div>
-                        <div className="col-lg-8 ft-2">
-                            <h5>Sponsors</h5>
+                        <div className="col-lg sponsors ft-2">
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/idtlogo.png"></img>
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/stanfordbioelogo.png"></img>
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/biomelogo.png"></img>
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/neblogo.png"></img>
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/snapgenelogo.png"></img>
+                            <img className="col sponsor-logo" src="https://static.igem.wiki/teams/4951/wiki/graphics/twistlogo.png"></img>
                         </div>
                     </div>
                 </div>  
@@ -33,19 +45,19 @@ const Footer = () => {
                         <h5>Project</h5>
                         <ul>
                             <li className="nav-item">
-                                <a className="" href="/">Description</a>
+                                <a className="" href="/Description">Description</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Design</a>
+                                <a className="" href="/Design">Design</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Engineering</a>
+                                <a className="" href="/Engineering">Engineering</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Implementation</a>
+                                <a className="" href="/Implementation">Implementation</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Results</a>
+                                <a className="" href="/Results">Results</a>
                             </li>
                         </ul>
                         </div>
@@ -53,19 +65,19 @@ const Footer = () => {
                         <h5>Wet Lab</h5>
                         <ul>
                             <li className="nav-item">
-                                <a className="" href="/">Part Collection</a>
+                                <a className="" href="/PartCollection">Part Collection</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Parts</a>
+                                <a className="" href="/Parts">Parts</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Experiments</a>
+                                <a className="" href="/Experiments">Experiments</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Safety</a>
+                                <a className="" href="/Safety">Safety</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Notebook</a>
+                                <a className="" href="/Notebook">Notebook</a>
                             </li>
                         </ul>
                         </div>
@@ -73,16 +85,16 @@ const Footer = () => {
                         <h5>Human Practices</h5>
                         <ul>
                             <li className="nav-item">
-                                <a className="" href="/">Integrated Human Practices</a>
+                                <a className="" href="/IntegratedHumanPractices">Integrated Human Practices</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Communication</a>
+                                <a className="" href="/Communication">Communication</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Sustainable Development</a>
+                                <a className="" href="/SustainableDevelopment">Sustainable Development</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Education</a>
+                                <a className="" href="/Education">Education</a>
                             </li>
                         </ul>
                         </div>
@@ -90,13 +102,13 @@ const Footer = () => {
                         <h5>Team</h5>
                         <ul>
                             <li className="nav-item">
-                                <a className="" href="/">Our Team</a>
+                                <a className="" href="/OurTeam">Our Team</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Attributions</a>
+                                <a className="" href="/Attributions">Attributions</a>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Our Contribution</a>
+                                <a className="" href="/OurContribution">Our Contribution</a>
                             </li>
                         </ul>
                         </div>
@@ -104,7 +116,7 @@ const Footer = () => {
                             <h5>Awards</h5>
                             <ul>
                                 <li className="nav-item">
-                                    <a className="" href="/">Awards</a>
+                                    <a className="" href="/Awards">Awards</a>
                                 </li>
                             </ul>
                         </div>
@@ -119,7 +131,7 @@ const Footer = () => {
                     </div>
                 </div>  
             </div>
-        </>
+        </footer>
     )
 }
 

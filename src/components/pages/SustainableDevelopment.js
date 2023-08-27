@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const SustainableDevelopment = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Sustainable Development">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

@@ -2,29 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
   overflow-x: hidden;
 }
 
+h2, h3 {
+  scroll-margin-top: 130px;
+}
+
+@supports (-webkit-hyphens:none) {
+  h2, h3 {
+      padding-top: 16px;
+      margin-top: -16px;
+  }
+}
+
 /* ------------ NAVBAR -------------*/ 
 header .nav-area {
-  background-image: linear-gradient(to right, #9796f0d0, #fbc7d4a2);/* Set the background color to a transparent red */
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07),
-    0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to right, #a8c1ff, #3f2b96);
   color: #212529;
   width: 100%;
   position: fixed;
-  top: 0;
   left: 0;
 }
 
 .navbar {
   background-color: transparent; /* Set the background color of the navbar to transparent */
   z-index: 9999;
-  position: fixed;
   width: 100%;
 }
 
@@ -36,36 +43,38 @@ header .nav-area {
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 80px;
+  margin: auto;
   height: 80px;
   overflow: visible; /* Remove the horizontal scrolling */
   white-space: nowrap;
   z-index: 9999;
 }
 
-.logo {
-  text-decoration: none;
-  font-size: 25px;
-  color: inherit;
-  margin-right: auto; /* Align the logo to the left side */
+.logo a{
+  margin-right: auto;
+  display: inline-block;
+  margin-left: 7rem;
 }
 
+#phage-logo {
+  margin-top: 10px;
+  width: 125px;
+}
 
 .navbar-menu {
   display: flex;
   list-style: none;
   justify-content: center; /* Center the navbar items horizontally */
   align-items: center; /* Center the navbar items vertically */
+  margin-right: 7rem;
   margin-left: auto;
-  margin-right: auto; /* Add this line to horizontally center the navbar menu */
   list-style-type: none;
-  height: 100%;
   margin-bottom: 0;
   z-index: 9999;
 }
 
 .navbar-item {
+  margin-top: 10px;
   position: relative;
   margin-right: 50px;
 }
@@ -90,7 +99,7 @@ header .nav-area {
   visibility: hidden;
   margin-top: 10px; /* Add a margin to position the dropdown below the navbar */
   padding-bottom: 0px;
-  background-color: rgba(128, 128, 128, 0.5); /* Set the background color to a transparent red */
+  background-color: rgba(156, 139, 204, 0.8); /* Set the background color to a transparent red */
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
@@ -110,7 +119,7 @@ header .nav-area {
 
 .navbar-dropdown .navbar-link,
 .navbar-dropdown .navbar-link:hover {
-  color: #212529; /* Change the color of the dropdown links */
+  color: #ffffff; /* Change the color of the dropdown links */
   text-decoration: none; /* Remove the underline on the dropdown links */
   opacity: 1;
 }
@@ -135,35 +144,89 @@ header .nav-area {
 }
 
 .navbar-dropdown-item:hover a {
-  color: white;
+  color: lightblue;
 }
 
 .navbar-title {
-  color: #212529;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease-in-out; /* Add transition for color property */
 }
 
 .navbar-title:hover {
-  color: white;
+  color: lightblue;
+}
+
+.progress-container {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.168);
+  height: 10px;
+  left: 0;
+}
+
+.progress-line {
+  width: 100%;
+  background-color: rgb(190, 221, 236);
+  height: 100%;
+}
+
+/* ------------ TABLE OF CONTENTS  -------------*/ 
+nav.table-of-contents {
+  position: sticky;
+  position: -webkit-sticky; /* For Safari */
+  top: 600px; /* How far down the page you want your ToC to live */
+}
+
+.text-content { 
+  margin-right: 15rem;
+  margin-left: 6rem;
+}
+
+.content-section {
+  margin-top: 75px;
+}
+
+.toc-container {
+  position: sticky;
+  position: -webkit-sticky; /* For Safari */
+  top: 400px;
+}
+
+.toc-container a {
+  color: grey;
+  text-decoration: none;
+}
+
+
+.toc-container li.active > a {
+  color: blue;
+}
+
+
+.toc-container li > a:hover {
+  color: blue;
 }
 
 /* ------------ FOOTER -------------*/ 
 .Footer {
   padding: 0;
-  margin-top: 20rem;
+}
+
+#stanford-logo{
+  width: 300px;
 }
 
 .ft-1 {
-  padding-top: 30px;
-  margin: 80px;
+  margin: 0;
+  padding-bottom: 40px;
+  margin-left: 60px;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
 }
 
 .ft-1 h3 {
@@ -177,28 +240,28 @@ header .nav-area {
   font-weight: 500;
 }
 
-.footer-icons i {
+.icons a{
   padding: 0.4rem 0.5rem;
   background: #e1e1e1;
-  color: #f60838;
+  color: #0838f6;
   margin: 0 0.5rem;
   border-radius: 50%;
 }
 
-.footer-icons i:hover {
-  background: #f60838;
+.icons :hover {
+  background: #3f2b96;
   color: #fff;
   transition: 0.6s;
   cursor: pointer;
 }
 
 .Footer h5 {
-  color: #f60838;
+  color: #3f2b96;
   color: white;
 }
 
 .footer-top {
-  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
 }
 
 .footer-bottom {
@@ -249,6 +312,15 @@ header .nav-area {
   fill: #ffffff;
 }
 
+.sponsor-logo {
+  width: 16%;
+  margin: 10px;
+}
+
+.sponsors { 
+  margin-bottom: 30px;
+}
+
 .end-note {
   margin-top: 40px !important;
 }
@@ -259,9 +331,18 @@ header .nav-area {
 
 /* ------------ TITLE TEMPLATE  -------------*/
 .title {
-  height: 30rem;
-  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  height: 35rem;
+  background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
 }
+
+#title-name{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding-top: 11rem;
+  font-size: 72px;
+}
+
 .custom-shape-divider-bottom-1688456140 {
   position: relative;
   bottom: 0;
@@ -282,4 +363,145 @@ header .nav-area {
 
 .custom-shape-divider-bottom-1688456140 .shape-fill {
   fill: rgb(255, 255, 255);
+}
+
+/* ------------ TEAM PAGE -------------*/
+.slideshow {
+  width: 105vw;
+  height: 100vh;
+  background-color: rgb(45, 43, 61);
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  z-index: 2;
+}
+
+#team-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+#team-caption {
+  font-size: 24px;
+}
+
+.carousel {
+  width: 80vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(45, 43, 61, 1));
+  z-index: 1;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  display: none;
+}
+
+.carousel .carousel-indicators button {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.carousel-indicators {
+  transform: translateX(-16.8%);
+}
+
+.member-cards {
+  margin: 0;
+  padding: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+.student-card p{
+  font-size: 12px;
+}
+
+.mentor-card p{
+  font-size: 12px;
+}
+
+.mentor-cards{
+  margin: 0;
+  padding: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.student-card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+.mentor-card {
+  margin-top: 50px;
+}
+
+.card-body .fa-envelope, .card-body .fa-linkedin{
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+}
+.card{
+  border: none;
+  cursor: pointer;
+}
+
+.card-img, .card-img-top {
+  border-radius: 25px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.mentor-text{
+  justify-content: center;
+  text-align: center;
+}
+
+.card-buttons {
+  display: flex;
 }

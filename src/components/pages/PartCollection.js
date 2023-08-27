@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const PartCollection = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Part Collection">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

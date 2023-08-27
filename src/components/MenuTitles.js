@@ -5,67 +5,84 @@ export const MenuTitles = [
         title: "Project",
         submenu: [
             {
-                title: "Description"
+                title: "Description", 
+                display: "Description"
             },
             {
-                title: "Design"
+                title: "Design", 
+                display: "Design"
             },
             {
-                title: "Engineering"
+                title: "Engineering",
+                display: "Engineering"
             },
             {
-                title: "Implementation"
+                title: "Implementation", 
+                display: "Implementation"
             },
             {
-                title: "Results"
+                title: "Results", 
+                display: "Results"
             }
         ]
     },{
         title: "Wet Lab",
         submenu: [
             {
-                title: "Part Collection"
+                title: "PartCollection", 
+                display: "Part Collection"
             },
             {
-                title: "Parts"
+                title: "Parts", 
+                display: "Parts"
             },
             {
-                title: "Experiments"
+                title: "Experiments",
+                display: "Experiments"
             },
             {
-                title: "Safety"
+                title: "Safety", 
+                display: "Safety"
             }, 
             {
-                title: "Notebook"
+                title: "Notebook", 
+                display: "Notebook"
             }
         ]
     },{
         title: "Human Practices",
         submenu: [
             {
-                title: "Integrated Human Practices"
+                title: "IntegratedHumanPractices", 
+                display: "Integrated Human Practices"
             },
             {
-                title: "Communication"
+                title: "Communication", 
+                display: "Communication"
             },
             {
-                title: "Sustainable Development"
+                title: "SustainableDevelopment", 
+                display: "Sustainable Development"
             },
             {
-                title: "Education"
+                title: "Education", 
+                display: "Education"
             }
         ]
     },{
         title: "Team",
         submenu: [
             {
-                title: "Our Team"
+                title: "OurTeam", 
+                display: "Our Team"
             },
             {
-                title: "Attributions"
+                title: "Attributions",
+                display: "Attributions"
             },
             {
-                title: "Our Contribution"
+                title: "OurContribution", 
+                display: "Our Contribution"
             }
         ]
     },{

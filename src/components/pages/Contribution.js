@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const Contribution = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Contribution">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

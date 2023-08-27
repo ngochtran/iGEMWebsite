@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const Awards = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Awards">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 

@@ -3,9 +3,9 @@ import Template from '../Template'
 
 const Communication = () => {
     return ( 
-        <div> 
-            <Template />
-        </div>
+        <Template title="Communication">
+            <h1> Hello </h1>
+        </Template>
     )
 }
 
