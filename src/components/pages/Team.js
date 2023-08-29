@@ -13,13 +13,11 @@ library.add(faEnvelope, faLinkedin);
 function ImageCarousel() {
   const [index, setIndex] = useState(0);
   const images = [
-    "https://static.igem.wiki/teams/4951/wiki/eye-wash-and-emergency-shower-goggles-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/fume-hood-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/workbench-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/eye-wash-and-emergency-shower-goggles-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/fume-hood-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/eye-wash-and-emergency-shower-goggles-min.png",
-    "https://static.igem.wiki/teams/4951/wiki/fume-hood-min.png"
+    "https://static.igem.wiki/teams/4951/wiki/team-photos/fullteam-c.jpg",
+    "https://static.igem.wiki/teams/4951/wiki/team-photos/teamphoto1-c.jpg",
+    "https://static.igem.wiki/teams/4951/wiki/team-photos/teamphoto2-pho-edit-c.jpg",
+    "https://static.igem.wiki/teams/4951/wiki/team-photos/mentorphotos1-c4.jpg", 
+    "https://static.igem.wiki/teams/4951/wiki/team-photos/mentorphoto2-c.jpg"
   ];
 
   useEffect(() => {
@@ -61,14 +59,14 @@ function Team() {
       <div class="slideshow">
         <div class="text-overlay">
           <h1 id="team-title">Meet the Stanford iGEM Team</h1>
-          <p id="team-caption">The team consists of eight members from diverse backgrounds and fields of study.</p>
+          <p id="team-caption">The team consists of eight members<br></br> from diverse backgrounds and fields of study.</p>
         </div>
         <div class="carousel">
           <ImageCarousel />
         </div>
       </div>
       <div className="row member-cards">
-        <h1>Team Members</h1>
+        <h1 className="card-heading">Team Members</h1>
         {membersInfo.map((member, key) => {
           return (
             <div className="col-lg-3" key={key}>
@@ -115,10 +113,10 @@ function Team() {
         })}
       </div>
       <div className="row mentor-cards">
-        <h1>Faculty</h1>
+        <h1 className="card-heading">Faculty & Coordinators</h1>
         {mentorInfo.map((member, key) => {
           return (
-            <div className="col-md" key={key}>
+            <div className="col-md-3" key={key}>
               <Card className="mentor-card" onClick={() => {toggleShow(member.name)}}>
                 <Card.Img variant="top mt-0" src={member.img.src} alt={member.img.alt} />
                 <Card.Body>

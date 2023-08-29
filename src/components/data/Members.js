@@ -4,7 +4,7 @@ export const membersInfo = [
     name: "Zane Chan",
     year: "Bioengineering '25",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/zane-c.jpg",
       alt: "Picture of Zane Chan",
     },
     email: "zanechan@stanford.edu",
@@ -16,7 +16,7 @@ export const membersInfo = [
     name: "Julia Vu",
     year: "Bioengineering '26",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/julia-c.jpg",
       alt: "Picture of Julia Vu",
     },
     email: "juliavu@stanford.edu",
@@ -28,7 +28,7 @@ export const membersInfo = [
     name: "Ngoc Tran",
     year: "Computer Science '26",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ngoc-c.jpg",
       alt: "Picture of Ngoc Tran",
     },
     email: "nhtran@stanford.edu",
@@ -40,7 +40,7 @@ export const membersInfo = [
     name: "Nick Murphy",
     year: "Chemical Engineering '25",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/nick-c.jpg",
       alt: "Picture of Nick Murphy",
     },
     email: "ngmurphy@stanford.edu",
@@ -50,9 +50,9 @@ export const membersInfo = [
   {
     id: 4,
     name: "Akio Shirali",
-    year: "Biomedical Computation '26",
+    year: "Biocomputation '26",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/akio-c.jpg",
       alt: "Picture of Akio Shirali",
     },
     email: "akios@stanford.edu",
@@ -64,7 +64,7 @@ export const membersInfo = [
     name: "Katie Han",
     year: "Bioengineering '24",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/katie-c.jpg",
       alt: "Picture of katie Han",
     },
     email: "hankatie@stanford.edu",
@@ -74,21 +74,21 @@ export const membersInfo = [
   {
     id: 6,
     name: "Melissa Nguyen",
-    year: "Biomedical Computation '26",
+    year: "Electrical Engineering '26",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/melissa-c.jpg",
       alt: "Picture of Melissa Nguyen",
     },
     email: "ngumel12@stanford.edu",
     linkedin: "",
-    bio: "Melissa is a sophomore majoring in Biomedical Computation. With a passion for merging biology and computation, she aims to develop cutting-edge technology for biomedical purposes. Melissa's insatiable curiosity and dedication to scientific exploration drive her pursuit of knowledge in medical device development. In iGEM, she collaborates with like-minded peers to engineer innovative solutions using synthetic biology. Beyond the lab, Melissa finds joy in music and embraces her playful side with adorable pillow pets.",
+    bio: "Melissa is a sophomore majoring in Electrical Engineering. With a passion for merging biology and computation, she aims to develop cutting-edge technology for biomedical purposes. Melissa's insatiable curiosity and dedication to scientific exploration drive her pursuit of knowledge in medical device development. In iGEM, she collaborates with like-minded peers to engineer innovative solutions using synthetic biology. Beyond the lab, Melissa finds joy in music and embraces her playful side with adorable pillow pets.",
   },
   {
     id: 7,
     name: "Iyshwary Warren",
     year: "Bioengineering '24",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ivy-c.jpg",
       alt: "Picture of Iyshwary Warren",
     },
     email: "iwarren@stanford.edu",
