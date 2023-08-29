@@ -472,11 +472,27 @@ nav.table-of-contents {
 }
 
 .student-card {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.card-photo{
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.card-front{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back{
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-photo:hover{
+  transform: rotateY(180deg);
 }
 
 .card-body .fa-envelope, .card-body .fa-linkedin{
