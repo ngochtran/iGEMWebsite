@@ -7,6 +7,10 @@ export const mentorInfo = [
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
         alt: "Photo of Dr. Drew Endy",
       },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drendy.png",
+        alt: "Fun Photo of Dr. Drew Endy",
+      },
       website: "", 
       email: "", 
       linkedin: "",
@@ -21,6 +25,10 @@ export const mentorInfo = [
       img: {
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drring.png",
         alt: "Photo of Dr. Huijun Ring",
+      },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/drring.png",
+        alt: "Fun Photo of Dr. Huijun Ring",
       },
       website: "", 
       email: "", 
@@ -37,6 +45,10 @@ export const mentorInfo = [
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/philkyriakakis-c.jpg",
         alt: "Photo of Dr. Phil Kyriakakis",
       },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/philkyriakakis-c.jpg",
+        alt: "Fun Photo of Dr. Phil Kyriakakis",
+      },
       website: "", 
       email: "", 
       linkedin: "",
@@ -51,6 +63,10 @@ export const mentorInfo = [
       img: {
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/draveresch.png",
         alt: "Photo of Dr. Nils Averesch",
+      },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/draveresch.png",
+        alt: "Fun Photo of Dr. Nils Averesch",
       },
       website: "", 
       email: "", 
@@ -67,6 +83,10 @@ export const mentorInfo = [
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/cyrus-c.jpg",
         alt: "Photo of Cyrus K.",
       },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/cyrus-c.jpg",
+        alt: "Fun Photo of Cyrus K.",
+      },
       website: "", 
       email: "", 
       linkedin: "",
@@ -82,6 +102,10 @@ export const mentorInfo = [
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/caroline.jpg",
         alt: "Photo of Caroline Van",
       },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/caroline2.jpg",
+        alt: "Fun Photo of Caroline Van",
+      },
       website: "", 
       email: "", 
       linkedin: "",
@@ -96,6 +120,10 @@ export const mentorInfo = [
       img: {
         src: "https://static.igem.wiki/teams/4951/wiki/team-photos/gurmen.jpg",
         alt: "Photo of Gurmen",
+      },
+      imgFun: {
+        src: "https://static.igem.wiki/teams/4951/wiki/team-photos/gurmen2.jpg",
+        alt: "Fun Photo of Gurmen",
       },
       website: "", 
       email: "", 

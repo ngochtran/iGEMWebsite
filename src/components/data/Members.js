@@ -7,6 +7,10 @@ export const membersInfo = [
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/zane-c.jpg",
       alt: "Picture of Zane Chan",
     },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/zane2.jpg",
+      alt: "Fun Picture of Zane Chan",
+    },
     email: "zanechan@stanford.edu",
     linkedin: "https://www.linkedin.com/in/zane-chan-b5aa0122b/",
     bio: "Zane is a rising junior majoring in Bioengineering and minoring in Computer Science. He loves synthetic biology, dogs, and adventures (terrifyingly broadly defined). Zane would like to make gene therapies for dogs someday. Zane joined iGEM to build a stronger foundation in bioengineering. It takes a lot of practice! Some things he loves to do outside of school are backpacking, working on BioE projects (@stanford.biome), spikeball, reading, traveling, skiing, watching movies, triathlon training, and cooking",
@@ -18,6 +22,10 @@ export const membersInfo = [
     img: {
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/julia-c.jpg",
       alt: "Picture of Julia Vu",
+    },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/julia2.jpg",
+      alt: "Fun Picture of Julia",
     },
     email: "juliavu@stanford.edu",
     linkedin: "https://www.linkedin.com/in/julia-p-vu/",
@@ -31,6 +39,10 @@ export const membersInfo = [
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ngoc-c.jpg",
       alt: "Picture of Ngoc Tran",
     },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ngoc2.jpg",
+      alt: "Fun Picture of Ngoc Tran",
+    },
     email: "nhtran@stanford.edu",
     linkedin: "https://www.linkedin.com/in/ngoc-tran-4882b1245/",
     bio: "Ngoc is a sophomore from Austin, Texas, who plans to major in Computer Science with a specialization in the HCI and Visual Computation tracks. With a keen interest in biotechnology and game development, Ngoc is dedicated to advancing the boundaries of scientific innovation by engaging in multidisciplinary fields. Outside of iGEM, she is involved in Stanford’s Vietnamese Student Association as a PR chair and Storyboarding Club as an artist. Occasionally, you can find her working on independent projects such as her indie video game or art portfolio projects.",
@@ -42,6 +54,10 @@ export const membersInfo = [
     img: {
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/nick-c.jpg",
       alt: "Picture of Nick Murphy",
+    },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/nick2.jpg",
+      alt: "Fun Picture of Nick Murphy",
     },
     email: "ngmurphy@stanford.edu",
     linkedin: "https://www.linkedin.com/in/nicholasgmurphy/",
@@ -55,6 +71,10 @@ export const membersInfo = [
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/akio-c.jpg",
       alt: "Picture of Akio Shirali",
     },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/akio2.jpg",
+      alt: "Fun Picture of Akio Shirali",
+    },
     email: "akios@stanford.edu",
     linkedin: "https://www.linkedin.com/in/akio-shirali/",
     bio: "Akio is a sophomore majoring in Biomedical Computation and Data Science. With interests in astrobiology, immunology, and synthetic biology, Akio’s curiosity knows no bounds. Currently, he does research at the Possu Huang Lab, where he studies protein design for immunotherapy. He hopes to learn more about the intersection of genetics and data analysis in order to improve human health. When he’s not in the lab, he enjoys the thrill of long-distance biking!",
@@ -66,6 +86,10 @@ export const membersInfo = [
     img: {
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/katie-c.jpg",
       alt: "Picture of katie Han",
+    },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/katie2.jpg",
+      alt: "Fun Picture of Katie Han",
     },
     email: "hankatie@stanford.edu",
     linkedin: "https://www.linkedin.com/in/katiehan0/",
@@ -79,6 +103,10 @@ export const membersInfo = [
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/melissa-c.jpg",
       alt: "Picture of Melissa Nguyen",
     },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/mel2.jpg",
+      alt: "Fun Picture of Melissa Nguyen",
+    },
     email: "ngumel12@stanford.edu",
     linkedin: "",
     bio: "Melissa is a sophomore majoring in Electrical Engineering. With a passion for merging biology and computation, she aims to develop cutting-edge technology for biomedical purposes. Melissa's insatiable curiosity and dedication to scientific exploration drive her pursuit of knowledge in medical device development. In iGEM, she collaborates with like-minded peers to engineer innovative solutions using synthetic biology. Beyond the lab, Melissa finds joy in music and embraces her playful side with adorable pillow pets.",
@@ -90,6 +118,10 @@ export const membersInfo = [
     img: {
       src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ivy-c.jpg",
       alt: "Picture of Iyshwary Warren",
+    },
+    imgFun: {
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ivy2.jpg",
+      alt: "Fun Picture of Iyshwary Warren",
     },
     email: "iwarren@stanford.edu",
     linkedin: "https://www.linkedin.com/in/ivwarren/",
