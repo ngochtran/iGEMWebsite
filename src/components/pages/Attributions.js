@@ -4,7 +4,14 @@ import Template from '../Template'
 const Attributions = () => {
     return ( 
         <Template title="Attributions">
-            <h1> Hello </h1>
+            <div class="row mt-4">
+                <iframe
+                    id="igem-attribution-form"
+                    src="https://attributions.igem.org?team=Stanford&year=2023"
+                >
+                </iframe>
+            </div>
+
         </Template>
     )
 }
