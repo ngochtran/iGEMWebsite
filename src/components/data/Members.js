@@ -116,7 +116,7 @@ export const membersInfo = [
     name: "Iyshwary Warren",
     year: "Bioengineering '24",
     img: {
-      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ivy-c.jpg",
+      src: "https://static.igem.wiki/teams/4951/wiki/team-photos/ivy.jpg",
       alt: "Picture of Iyshwary Warren",
     },
     imgFun: {
