@@ -1,16 +1,20 @@
 import React, { useRef, useState, useEffect } from "react";
 
-const useHeadingsData = () => {
+const useHeadingsData = (activeKey, setActiveId) => {
   const [nestedHeadings, setNestedHeadings] = useState([]);
 
   useEffect(() => {
-    const headingElements = Array.from(
-      document.querySelectorAll("h2, h3")
-    );
+    const parentID = document.querySelector("#" + activeKey);
+    const headingElements = Array.from(parentID.querySelectorAll("h2, h3"));
 
     const newNestedHeadings = getNestedHeadings(headingElements);
     setNestedHeadings(newNestedHeadings);
-  }, []);
+
+    // Update the active heading ID whenever the active tab changes
+    if (nestedHeadings.length > 0) {
+      setActiveId(nestedHeadings[0].id);
+    }
+  }, [activeKey]);
 
   const getNestedHeadings = (headingElements) => {
     const nestedHeadings = [];
@@ -114,14 +118,14 @@ const useIntersectionObserver = (setActiveId) => {
 };
 
 
-const TableOfContents = () => {
-  const [activeId, setActiveId] = useState(); // Step 1: Add activeId state variable
-  const { nestedHeadings } = useHeadingsData();
+const TableOfContents = ({ activeKey }) => {
+  const [activeId, setActiveId] = useState();
+  const { nestedHeadings } = useHeadingsData(activeKey, setActiveId);
   useIntersectionObserver(setActiveId);
 
   return (
     <nav aria-label="Table of Contents" className="toc-container">
-      <Headings headings={nestedHeadings} activeId={activeId} /> {/* Step 1: Pass activeId as prop */}
+      <Headings headings={nestedHeadings} activeId={activeId} />
     </nav>
   );
 };
