@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 
 function Template({ title, children }) {
   return (

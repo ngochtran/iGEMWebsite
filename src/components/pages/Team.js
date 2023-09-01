@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Carousel, Modal, Card, Button } from "react-bootstrap";
+import { Carousel, Modal, Card } from "react-bootstrap";
 import { membersInfo } from "../data/Members.js"
 import { mentorInfo } from "../data/Mentors.js"
 import Template from "../Template2";
@@ -26,7 +26,7 @@ function ImageCarousel() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
